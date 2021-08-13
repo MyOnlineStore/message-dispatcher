@@ -1,0 +1,32 @@
+{
+    "name": "myonlinestore/message-dispatcher",
+    "type": "library",
+    "description": "MyOnlineStore Message Dispatcher",
+    "homepage": "https://github.com/MyOnlineStore/message-dispatcher",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MyOnlineStore\\MessageDispatcher\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyOnlineStore\\MessageDispatcher\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "symfony/event-dispatcher": "^4.4 || ^5.3",
+        "symfony/http-kernel": "^4.4 || ^5.3",
+        "symfony/messenger": "^4.4 || ^5.3"
+    },
+    "require-dev": {
+        "myonlinestore/coding-standard": "^3.1",
+        "phpunit/phpunit": "^8.5 || ^9.5",
+        "psalm/plugin-phpunit": "^0.16",
+        "vimeo/psalm": "^4.9"
+    }
+}
