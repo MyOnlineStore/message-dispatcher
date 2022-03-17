@@ -14,8 +14,7 @@ final class SynchronousMessageDispatcherTest extends TestCase
     /** @var MessageBusInterface&MockObject */
     private $messageBus;
 
-    /** @var SynchronousMessageDispatcher */
-    private $messageDispatcher;
+    private SynchronousMessageDispatcher $messageDispatcher;
 
     protected function setUp(): void
     {

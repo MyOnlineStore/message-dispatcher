@@ -9,11 +9,8 @@ use Symfony\Component\Messenger\MessageBusInterface;
 
 /** @final */ class DelayedMessageDispatcher implements MessageDispatcher
 {
-    /** @var EventDispatcherInterface */
-    private $eventDispatcher;
-
-    /** @var MessageBusInterface */
-    private $messageBus;
+    private EventDispatcherInterface $eventDispatcher;
+    private MessageBusInterface $messageBus;
 
     public function __construct(EventDispatcherInterface $eventDispatcher, MessageBusInterface $messageBus)
     {
