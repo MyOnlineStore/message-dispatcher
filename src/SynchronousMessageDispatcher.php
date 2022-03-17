@@ -7,8 +7,7 @@ use Symfony\Component\Messenger\MessageBusInterface;
 
 final class SynchronousMessageDispatcher implements MessageDispatcher
 {
-    /** @var MessageBusInterface */
-    private $messageBus;
+    private MessageBusInterface $messageBus;
 
     public function __construct(MessageBusInterface $messageBus)
     {
